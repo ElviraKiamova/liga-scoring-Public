@@ -139,18 +139,18 @@ a[href^="tel:"] {
 .hero {
   width: 100%;
   min-height: 640px;
-  padding: 125px 0 0 105px;
+  /* padding: 125px 0 0 105px; */
   background: url('../img/8aeeb01611ea2b4e18fec01c12ba4bff.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  box-sizing: border-box;
 }
 
 .hero__container {
   max-width: 890px;
   display: flex;
   flex-direction: column;
+  padding: 125px 0 0 105px;
 }
 
 .hero__title {
@@ -169,14 +169,14 @@ a[href^="tel:"] {
   line-height: 24px;
 }
 
-.hero__text:last-child {
-  margin-top: 24px;
+.hero p:last-child {
+  margin: 0;
 }
 
 .hero__button {
   width: 240px;
   height: 60px;
-  margin: 28px 0;
+  margin: 30px 0;
   padding: 0;
   border: none;
   border-radius: 5px;
@@ -194,13 +194,13 @@ a[href^="tel:"] {
     min-height: 580px;
     display: flex;
     background-size: cover;
-    padding: 0;
   }
 
   .hero__container {
     align-items: center;
     justify-content: center;
     margin: 60px auto;
+    padding: 0;
   }
 
   .hero__title {
@@ -210,6 +210,7 @@ a[href^="tel:"] {
     text-align: center;
   }
 
+  .hero__text,
   .hero p:last-child {
     margin-top: 32px;
     text-align: center;
@@ -240,7 +241,7 @@ a[href^="tel:"] {
     line-height: 42px;
   }
 
-  .hero p:last-child {
+  .hero__text {
     max-width: 345px;
     margin-top: 30px;
     font-size: 12px;
