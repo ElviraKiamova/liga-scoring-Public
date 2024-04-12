@@ -252,3 +252,142 @@ a[href^="tel:"] {
     height: 50px;
   }
 }
+
+/* стили для секции events */
+
+.events {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F0EAD6;
+}
+
+.events__container {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  max-width: 1440px;
+  margin: 60px 0;
+}
+
+.events__title {
+  color: #513833;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+}
+
+.events__cards {
+  max-width: 1230px;
+  display: grid;
+  justify-self: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 415px);
+  gap: 0 30px;
+  margin: 50px 0;
+}
+
+.events__card {
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
+.events__card-box {
+  margin: 25px 20px;
+}
+
+
+.events__card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.events__card-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 110px;
+  height: 32px;
+  background-color: #D2691E;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.events__card-location::before {
+  content: url('../img/icon-location.svg');
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.events__card-duration, .events__card-title, .events__card-complexity, .events__card-star, .events__card-star_marked {
+  position: relative;
+  z-index: 10;
+}
+
+.events__card-duration {
+  position: relative;
+  z-index: 100;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.events__card-duration::before {
+  content: url('../img/icon-calendar.svg');
+  position: relative;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.events__card-title {
+  margin: 20px 0 35px;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Playfair Display", serif;
+}
+
+.events__link-courses {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #D2691E;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.events__link-courses::after {
+  content: url('../img/icon-arrow.svg');
+  position: relative;
+  top: 4px;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+}
+
+.events__card-stars {
+  display: flex;
+}
+
+.events__card-star {
+  background-image: url("../img/star.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.events__card-star_marked {
+  background-image: url("../img/star-marked.svg");
+}
