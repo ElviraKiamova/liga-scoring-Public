@@ -187,3 +187,67 @@ a[href^="tel:"] {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
+
+
+@media (max-width: 1350px) {
+  .hero {
+    min-height: 580px;
+    display: flex;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .hero__container {
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+  }
+
+  .hero__title {
+    max-width: 618px;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .hero p:last-child {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .hero__button {
+    margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 400px;
+    background-size: cover;
+    max-height: 400px;
+    padding: 0;
+  }
+
+  .hero__container {
+    justify-content: start;
+    margin: 92px auto 0;
+  }
+
+  .hero__title {
+    max-width: 345px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .hero p:last-child {
+    max-width: 345px;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .hero__button {
+    height: 50px;
+  }
+}
