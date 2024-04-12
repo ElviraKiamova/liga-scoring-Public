@@ -132,3 +132,58 @@ a[href^="tel:"] {
     text-transform: uppercase;
   }
 }
+
+
+/* стили для секции hero */
+
+.hero {
+  width: 100%;
+  min-height: 640px;
+  padding: 125px 0 0 105px;
+  background: url('../img/8aeeb01611ea2b4e18fec01c12ba4bff.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.hero__container {
+  max-width: 890px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  max-width: 694px;
+  margin: 0;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.hero__text {
+  max-width: 500px;
+  margin: 31px 0 0;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hero__text:last-child {
+  margin-top: 24px;
+}
+
+.hero__button {
+  width: 240px;
+  height: 60px;
+  margin: 28px 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #D2691E;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
