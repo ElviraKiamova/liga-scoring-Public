@@ -5,18 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cook-Tour">
   <title>Cook-Tour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header data-test="header">
-    <!-- Шапка -->
+  <header class="header" data-test="header">
+    <div class="header__container">
+      <div class="header__logo"></div>
+      <nav>
+        <ul class="header__list">
+          <li class="header__item"><a href="#hero">Гастротуры</a></li>
+          <li class="header__item"><a href="#events">Бронирование</a></li>
+          <li class="header__item"><a href="#">О нас</a></li>
+          <li class="header__item"><a href="#">Отзывы</a></li>
+          <li class="header__item"><a href="#">Фотографии</a></li>
+          <li class="header__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    <a class="header__link-tel" href="tel:88007253232">8 800 725-32-32</a>
+    </div>
   </header>
-  <main>
-    <section data-test="hero">
-      <!-- Hero -->
+  <main class="main">
+    <section class="hero" id="hero" data-test="hero">
     </section>
-    <section data-test="events" >
-      <!-- События -->
+    <section class="events" id="events" data-test="events" >
     </section>
   </main>
 </body>

@@ -1,0 +1,132 @@
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  overflow-y: scroll;
+}
+
+.main {
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* стили для шапки */
+
+.header {
+  width: 100%;
+  max-width: 1440px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: #D2691E;
+}
+
+.header__container {
+  width: 89.5%;
+  display: flex;
+  justify-content: start;
+  padding: 38px 0 30px;
+}
+
+.header__logo {
+  background-image: url("../img/logo@2x.png");
+  background-size: 275px 52px;
+  width: 275px;
+  height: 52px;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 0 0 37px;
+  padding: 12px 0 30px;
+  position: relative;
+  left: -7px;
+}
+
+.header__item {
+  margin-right: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.header__item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__item:last-child {
+  margin: 0;
+}
+
+a[href^="tel:"] {
+  width: 275px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+  .header__logo {
+    background-image: url("../img/logo.png");
+  }
+
+  .header__container {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
+    padding: 40px 0 30px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__link-tel {
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    justify-content: space-between;
+    width: 92%;
+    padding: 15px 0;
+  }
+
+  .header__logo {
+    background-image: url("../img/logo__mobl.png");
+    background-repeat: no-repeat;
+    background-size: 114px 30px;
+    width: 114px;
+    height: 30px;
+  }
+
+  .header__link-tel {
+    width: 215px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
