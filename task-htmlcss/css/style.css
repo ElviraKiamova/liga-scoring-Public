@@ -265,12 +265,13 @@ a[href^="tel:"] {
 .events__container {
   display: flex;
   flex-direction: column;
-  width: 86%;
+  width: 85,5%;
   max-width: 1440px;
   margin: 60px 0;
 }
 
 .events__title {
+  margin: 0;
   color: #513833;
   font-size: 35px;
   line-height: 42px;
@@ -282,10 +283,10 @@ a[href^="tel:"] {
   max-width: 1230px;
   display: grid;
   justify-self: auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 390px);
   grid-template-rows: repeat(1, 415px);
   gap: 0 30px;
-  margin: 50px 0;
+  margin: 50px 0 46px;
 }
 
 .events__card {
@@ -303,6 +304,7 @@ a[href^="tel:"] {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   z-index: 1;
 }
 
@@ -319,6 +321,7 @@ a[href^="tel:"] {
   border: none;
   border-radius: 5px;
   font-size: 12px;
+  line-height: 12px;
   font-weight: 500;
   z-index: 10;
 }
@@ -346,14 +349,14 @@ a[href^="tel:"] {
 .events__card-duration::before {
   content: url('../img/icon-calendar.svg');
   position: relative;
-  top: 5px;
+  top: 6px;
   height: 20px;
   width: 20px;
   margin-right: 10px;
 }
 
 .events__card-title {
-  margin: 20px 0 35px;
+  margin: 22px 0 35px;
   font-size: 24px;
   line-height: 28px;
   font-family: "Playfair Display", serif;
@@ -376,6 +379,13 @@ a[href^="tel:"] {
   height: 20px;
   width: 20px;
   margin-left: 5px;
+}
+
+.events__card-complexity {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
 .events__card-stars {
