@@ -401,3 +401,74 @@ a[href^="tel:"] {
 .events__card-star_marked {
   background-image: url("../img/star-marked.svg");
 }
+
+
+@media (max-width: 1300px) {
+  .events__cards {
+    grid-template-columns: repeat(3, minmax(324px, 1fr));
+    margin: 50px 0 46px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .events__container {
+    width: 88.2%;
+    margin: 60px 40px;
+  }
+
+  .events__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  .events__cards {
+    height: 415px;
+    grid-template-columns: repeat(2, minmax(324px, 1fr));
+    overflow-y: hidden;
+  }
+
+  .events__card-img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events__container {
+    align-items: center;
+    margin: 70px 40px;
+  }
+
+  .events__cards {
+    grid-template-columns: 345px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .events__container {
+    width: 415px;
+    align-items: flex-start;
+  }
+
+  .events__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .events__link-courses {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .events__link-courses::after {
+    top: 2px;
+    content: url('../img/icon-arrow-mobile.svg');
+    margin-left: 10px;
+  }
+
+  .events__cards {
+    margin: 30px 0 30px;
+  }
+}
